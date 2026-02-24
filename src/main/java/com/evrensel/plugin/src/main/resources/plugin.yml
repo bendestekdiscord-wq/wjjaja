@@ -1,0 +1,6 @@
+name: ViaPlugins
+version: 1.0
+main: com.evrensel.plugin.Main
+api-version: 1.21
+author: Ben
+description: Eski eklentileri yeni surumlere uyarlar.
